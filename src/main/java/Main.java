@@ -1,4 +1,3 @@
-package main.java;
 public class Main {
     /* Implement your solution inside this method. */
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
