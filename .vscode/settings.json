@@ -12,7 +12,9 @@
     "build.xml": true,
     "LICENSE": true,
     "src/main/java/TreeNode.java": true,
-    "src/main/java/TreeUtils.java": true
+    "src/main/java/TreeUtils.java": true,
+    "dist": true,
+    "build": true
   },
   "java.project.sourcePaths": ["src/main/java"],
   "java.configuration.updateBuildConfiguration": "automatic",
