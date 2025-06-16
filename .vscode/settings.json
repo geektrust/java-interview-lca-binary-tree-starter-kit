@@ -11,6 +11,8 @@
     ".ant-targets-build.xml": true,
     "build.xml": true,
     "LICENSE": true,
+    "src/main/java/TreeNode.java": true,
+    "src/main/java/TreeUtils.java": true,
   },
   "scm.compactFolders": false,
   "explorer.compactFolders": false,
