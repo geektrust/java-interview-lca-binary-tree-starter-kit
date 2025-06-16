@@ -1,7 +1,20 @@
 public class Main {
+    /* Implement your solution inside this method. */
+    public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        return null;
+    }
+
+     /*
+     * *****************************************************************************
+     * DO NOT EDIT THIS CODE.
+     * *****************************************************************************
+     * 
+     * This code is used to bootstrap your solution to be checked for correctness by
+     * our system.
+     */
     public static void main(String[] args) {
         if (args.length < 3) {
-            System.err.println("Usage: java Main \"[3,5,1,6,2,0,8,null,null,7,4]\" 5 1");
+            System.err.println("Usage: java -jar dist/lib/dist.jar \"[3,5,1,6,2,0,8,null,null,7,4]\" 5 1");
             return;
         }
 
@@ -16,13 +29,5 @@ public class Main {
 
         TreeNode lca = lowestCommonAncestor(root, p, q);
         System.out.println(lca != null ? lca.val : "null");
-    }
-
-    public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null || root == p || root == q) return root;
-        TreeNode left = lowestCommonAncestor(root.left, p, q);
-        TreeNode right = lowestCommonAncestor(root.right, p, q);
-        if (left != null && right != null) return root;
-        return left != null ? left : right;
     }
 }

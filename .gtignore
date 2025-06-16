@@ -7,3 +7,6 @@ run_unittests.sh
 LICENSE
 lib/
 .ant-targets-build.xml
+src/main/java/TreeNode.java
+src/main/java/TreeUtils.java
+src/test/java/SampleTests.java
