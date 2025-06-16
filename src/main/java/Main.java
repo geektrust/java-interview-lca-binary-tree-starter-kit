@@ -1,9 +1,14 @@
+package main.java;
 public class Main {
     /* Implement your solution inside this method. */
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        return null;
+        if (root == null || root == p || root == q) return root;
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        if (left != null && right != null) return root;
+        return left != null ? left : right;
     }
-
+    
      /*
      * *****************************************************************************
      * DO NOT EDIT THIS CODE.
@@ -14,7 +19,7 @@ public class Main {
      */
     public static void main(String[] args) {
         if (args.length < 3) {
-            System.err.println("Usage: java -jar dist/lib/dist.jar \"[3,5,1,6,2,0,8,null,null,7,4]\" 5 1");
+            System.err.println("Usage: java Main \"[3,5,1,6,2,0,8,null,null,7,4]\" 5 1");
             return;
         }
 
